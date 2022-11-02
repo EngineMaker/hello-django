@@ -7,4 +7,4 @@ services:
       dockerfile: docker/prod/Dockerfile
     command: uvicorn mysite.asgi:application --host 0.0.0.0
     ports:
-      - "80:8000"
+      - 80:8000
