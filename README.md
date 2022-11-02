@@ -5,7 +5,7 @@ Djangoのチュートリアルをやっていきます
 ### ローカルで動かす
 ```
 python -m venv .venv
-python -m pip install -r requirements.txt
+pip install -r requirements.txt
 python manage.py migrate
 python manage.py runserver
 ```
