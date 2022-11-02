@@ -14,7 +14,7 @@ http://localhost:8000 を開く
 
 ### dockerで動かす
 ```
-docker-compose up
+docker compose up
 ```
 
 http://localhost:8000 を開く
