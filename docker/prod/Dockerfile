@@ -3,5 +3,5 @@ ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 ENV RENDER=true
 WORKDIR /code
+COPY docker/prod/start.sh /code/
 COPY . /code/
-RUN ./build.sh
