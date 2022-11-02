@@ -5,7 +5,7 @@ description = "Django tutorial application."
 authors = ["mktoho <mk@mktoho.org>"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.11"
 django = "^4.1.3"
 whitenoise = {extras = ["brotli"], version = "^6.2.0"}
 gunicorn = "^20.1.0"
