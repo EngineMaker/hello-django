@@ -4,7 +4,6 @@ image:
 tasks:
   - init: |
       createdb poll
-      cp .env_example .env
     command: docker/dev/start.sh
 
 # Ports to expose on workspace startup
