@@ -1,0 +1,28 @@
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Django Tutorial</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		{% load static %}
+		<meta property="og:title" content="Django Tutorial Application">
+		<meta property="og:type" content="programming">
+		<meta property="og:url" content="https://django.mktoho.dev">
+		<meta property="og:image" content="https://django.mktoho.dev{% static 'og.png' %}">
+	
+		<link rel="icon" href="{% static 'favicon.ico' %}" sizes="any">
+		<link rel="icon" href="{% static 'icon.svg' %}" type="image/svg+xml">
+		<link rel="apple-touch-icon" href="{% static 'icon.png' %}">
+	
+		<link rel="manifest" href="{% static 'site.webmanifest' %}">
+		<meta name="theme-color" content="#CDFCF6">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		{% tailwind_css %}
+	</head>
+
+	<body class="bg-[#090909]">
+		{% block content %}{% endblock content %}
+	</body>
+</html>
