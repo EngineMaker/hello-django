@@ -19,12 +19,17 @@ pip install --use-pep517 -r requirements.txt
 python manage.py migrate
 python manage.py shell < docker/dev/create-admin-user.py
 python manage.py runserver
+
+# tailwindとhot reload
+python manage.py install
+python manage.py build
+python manage.py start
 ```
 
 http://localhost:8000 を開く
 
 
-いらなくなったデータベースを片付ける
+Docker/Gitpodに乗り換えた後にデータベースサーバーを片付ける
 ```
 dropdb poll
 brew services stop postgresql@15
