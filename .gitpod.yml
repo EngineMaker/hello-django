@@ -3,8 +3,7 @@ image:
 
 tasks:
   - init: |
-      createdb poll
-      pip install --use-pep517 --no-cache-dir -r requirements.txt
+      createdb poll; :
     command: docker/dev/start.sh
 
 # Ports to expose on workspace startup
