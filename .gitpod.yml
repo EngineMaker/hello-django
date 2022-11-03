@@ -5,6 +5,8 @@ tasks:
   - init: |
       createdb poll; :
     command: docker/dev/start.sh
+  - init: python manage.py tailwind install
+    command: python manage.py tailwind start
 
 # Ports to expose on workspace startup
 ports:
