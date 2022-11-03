@@ -4,3 +4,4 @@ uvicorn
 psycopg2
 dj_database_url
 python-dotenv
+django-tailwind
