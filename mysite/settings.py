@@ -137,5 +137,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
-DEBUG = True
 CSRF_TRUSTED_ORIGINS = ['https://django.mktoho.dev']
