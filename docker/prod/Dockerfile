@@ -6,5 +6,5 @@ ENV RENDER=true
 WORKDIR /code
 COPY docker/prod/start.sh /code/
 COPY requirements.txt /code/
-RUN pip install -r requirements.txt
+RUN pip install --use-pep517 -r requirements.txt
 COPY . /code/
