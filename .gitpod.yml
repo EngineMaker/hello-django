@@ -2,7 +2,9 @@ image:
   file: .gitpod.dockerfile
 
 tasks:
-  - init: createdb poll
+  - init: |
+      createdb poll
+      cp .env_example .env
     command: docker/dev/start.sh
 
 # Ports to expose on workspace startup
