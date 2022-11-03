@@ -3,7 +3,7 @@ image:
 
 tasks:
   - init: |
-      createdb poll
+      createdb poll; :
     command: docker/dev/start.sh
 
 # Ports to expose on workspace startup
