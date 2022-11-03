@@ -3,7 +3,7 @@ image:
 
 tasks:
   - init: |
-      createdb poll; :
+      createdb poll
       pip install --use-pep517 --no-cache-dir -r requirements.txt
     command: docker/dev/start.sh
 
