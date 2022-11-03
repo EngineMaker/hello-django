@@ -5,5 +5,5 @@ RUN sudo apt-get update \
   python \
   && sudo rm -rf /var/lib/apt/lists/*
 
-#COPY requirements.txt /code/
+COPY requirements.txt /code/
 RUN pip install --no-cache-dir -r requirements.txt
