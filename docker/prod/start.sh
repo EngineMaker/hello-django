@@ -2,6 +2,7 @@
 # exit on error
 set -o errexit
 
+python manage.py tailwind build
 python manage.py collectstatic --no-input
 python manage.py migrate
 python manage.py shell < docker/dev/create-admin-user.py
