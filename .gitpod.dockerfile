@@ -6,6 +6,4 @@ FROM gitpod/workspace-postgresql
 #   && sudo rm -rf /var/lib/apt/lists/*
 
 RUN pyenv update && pyenv install 3.11.0 && pyenv local 3.11.0
-COPY requirements.txt $HOME/
-RUN pip install --use-pep517 --no-cache-dir -r requirements.txt
 ENV DATABASE_URL=postgresql://localhost/poll
