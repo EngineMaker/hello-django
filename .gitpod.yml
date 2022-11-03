@@ -3,10 +3,14 @@ image:
 
 tasks:
   - init: |
-      createdb poll; :
-    command: docker/dev/start.sh
-  - init: python manage.py tailwind install
+      python manage.py tailwind install
+      python manage.py tailwind build
+      gp sync-done tailwind
     command: python manage.py tailwind start
+  - init: |
+      createdb poll; :
+      gp sync-await tailwind
+    command: docker/dev/start.sh
 
 # Ports to expose on workspace startup
 ports:
