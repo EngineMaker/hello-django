@@ -21,9 +21,9 @@ python manage.py shell < docker/dev/create-admin-user.py
 python manage.py runserver
 
 # tailwindとhot reload
-python manage.py install
-python manage.py build
-python manage.py start
+python manage.py tailwind install
+python manage.py tailwind build
+python manage.py tailwind start
 ```
 
 http://localhost:8000 を開く
